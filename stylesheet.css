@@ -16,9 +16,13 @@ header{
   }
 
 .logo{
-  margin: 15px;
+  margin: 10px;
   color: #fff;
-    float: left;
+  float: left;
+}
+
+.logo-img{
+    height: 30px;
 }
 
 .header-right{
@@ -36,4 +40,3 @@ header{
     margin-left: 10px;
     margin-right: 10px;
 }
-  
