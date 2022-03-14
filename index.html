@@ -29,7 +29,7 @@
         <!-- Responsif header -->
         <div class="responsif-header" id="responsifHeader" style="display:none;">
             <a onclick="w3_close()" class="exit" ><img class="menu-img" src="./img/menu.png"></a>
-            <div class="responsif-header-side w3-bar-block">
+            <div class="responsif-header-side" >
                 <ul>
                     <li class="side-li"><a href="#" >Home</a></li>
                     <li class="side-li"><a href="#" > Makanan</a></li>
@@ -49,6 +49,17 @@
     
     function w3_close() {
         document.getElementById("responsifHeader").style.display = "none";
+        document.getElementById("menu").style.display = "block";
     }
+    
+    window.addEventListener("resize", function() {
+        if (window.matchMedia("(min-width: 640px)").matches){
+        document.getElementById("menu").style.display = "none";
+        
+    }else if(window.matchMedia("(max-width: 639px)").matches) {
+        console.log("Screen less than 500px")
+        document.getElementById("menu").style.display = "block";
+  }
+    })
 </script>
 </html>
