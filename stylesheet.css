@@ -1,0 +1,39 @@
+
+/***/
+header{
+    height: 50px;
+    background-color: #051334;
+    width: 100%;
+    left: 0;
+    position :fixed;
+    top: 0;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+.logo{
+  margin: 15px;
+  color: #fff;
+    float: left;
+}
+
+.header-right{
+    float: right;
+}
+
+.header-right a{
+    display: block;
+    float: left;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.slice{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  
