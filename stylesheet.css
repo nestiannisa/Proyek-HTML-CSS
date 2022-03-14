@@ -72,11 +72,3 @@ header{
 .side-li a:hover{
     color: rgb(190, 187, 187);
 }
-
-.menu-img{
-    display: none ; 
-}
-
-.exit{
-    display: none;
-}
