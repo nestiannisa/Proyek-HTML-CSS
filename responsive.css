@@ -1,9 +1,17 @@
 @media (max-width: 640px) {
     .menu-img{
+        display: block ;
+    }
+    .exit{
         display: block;
     }
-
     .header-right{
         display: none;
+    }
+    .responsif-header-side{
+        display: block;
+    }
+    .responsif-header{
+        display: block;
     }
 }

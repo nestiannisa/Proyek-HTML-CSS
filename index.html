@@ -14,18 +14,41 @@
             <div class="logo">
                 <img class="logo-img" src="./img/Foodies.png">
             </div>
-            <img class="menu-img" src="./img/menu.png">
+            <a onclick="w3_open()"> <img class="menu-img" id="menu" src="./img/menu.png"></a>
             <div class="header-right">
                 <a href="#">Home</a>
                 <a class="slice">|</a>
                 <a href="#"> Makanan</a>
                 <a class="slice">|</a>
-                <a href="#"> Minumam</a>
+                <a href="#"> Minuman</a>
                 <a class="slice">|</a>
                 <a href="#"> Tentang Kami</a>
               </div>
         </div>
+
+        <!-- Responsif header -->
+        <div class="responsif-header" id="responsifHeader" style="display:none;">
+            <a onclick="w3_close()" class="exit" ><img class="menu-img" src="./img/menu.png"></a>
+            <div class="responsif-header-side w3-bar-block">
+                <ul>
+                    <li class="side-li"><a href="#" >Home</a></li>
+                    <li class="side-li"><a href="#" > Makanan</a></li>
+                    <li class="side-li"><a href="#" > Minuman</a></li>
+                    <li class="side-li"><a href="#" > Tentang Kami</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
     
 </body>
+<script>
+    function w3_open() {
+      document.getElementById("responsifHeader").style.display = "block";
+      document.getElementById("menu").style.display = "none";
+    }
+    
+    function w3_close() {
+        document.getElementById("responsifHeader").style.display = "none";
+    }
+</script>
 </html>
