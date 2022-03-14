@@ -1,0 +1,9 @@
+@media (max-width: 640px) {
+    .menu-img{
+        display: block;
+    }
+
+    .header-right{
+        display: none;
+    }
+}
