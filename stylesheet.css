@@ -1,4 +1,17 @@
 /***/
+
+body {
+    font-family: "Lucida Grande";
+}
+  
+li {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+
 header{
     height: 50px;
     background-color: #051334;
@@ -12,12 +25,12 @@ header{
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
-  }
+}
 
 .logo{
-  margin: 10px;
-  color: #fff;
-  float: left;
+    margin: 10px;
+    color: #fff;
+    float: left;
 }
 
 .logo-img{

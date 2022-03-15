@@ -14,7 +14,7 @@
             <div class="logo">
                 <img class="logo-img" src="./img/Foodies.png">
             </div>
-            <a onclick="w3_open()"> <img class="menu-img" id="menu" src="./img/menu.png"></a>
+            <a onclick="header_open()"> <img class="menu-img" id="menu" src="./img/menu.png"></a>
             <div class="header-right">
                 <a href="#">Home</a>
                 <a class="slice">|</a>
@@ -28,7 +28,7 @@
 
         <!-- Responsif header -->
         <div class="responsif-header" id="responsifHeader" style="display:none;">
-            <a onclick="w3_close()" class="exit" ><img class="menu-img" src="./img/menu.png"></a>
+            <a onclick="header_close()" class="exit" ><img class="menu-img" src="./img/menu.png"></a>
             <div class="responsif-header-side" >
                 <ul>
                     <li class="side-li"><a href="#" >Home</a></li>
@@ -39,27 +39,48 @@
             </div>
         </div>
     </header>
-    
+    <div class="slide-show">
+        
+    </div>
 </body>
 <script>
-    function w3_open() {
+    function header_open() {
       document.getElementById("responsifHeader").style.display = "block";
       document.getElementById("menu").style.display = "none";
     }
     
-    function w3_close() {
+    function header_close() {
         document.getElementById("responsifHeader").style.display = "none";
         document.getElementById("menu").style.display = "block";
     }
     
     window.addEventListener("resize", function() {
         if (window.matchMedia("(min-width: 640px)").matches){
-        document.getElementById("menu").style.display = "none";
+            document.getElementById("menu").style.display = "none";
         
-    }else if(window.matchMedia("(max-width: 639px)").matches) {
-        console.log("Screen less than 500px")
-        document.getElementById("menu").style.display = "block";
-  }
+        }else if(window.matchMedia("(max-width: 639px)").matches) {
+            console.log("Screen less than 500px")
+            document.getElementById("menu").style.display = "block";
+        }
     })
+    
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+    showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("slide");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+    }
+    
 </script>
 </html>
