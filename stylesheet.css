@@ -85,3 +85,16 @@ header{
 .side-li a:hover{
     color: rgb(190, 187, 187);
 }
+
+
+footer a {
+  color: #000000;
+  font-size: 15px;
+  padding: 0 20px;
+  background-color:#FFFFFF;
+}
+
+footer {
+  padding-top:10px;
+  background-color:#051334;
+}
