@@ -1,4 +1,10 @@
 /***/
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
 
 body {
     font-family: "Lucida Grande";
@@ -86,6 +92,13 @@ header{
     color: rgb(190, 187, 187);
 }
 
+.top-wrapper {
+    padding: 360px 0 180px 0;
+    background-image: url(./img/slide1.jpeg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
 
 footer a {
   color: #000000;
