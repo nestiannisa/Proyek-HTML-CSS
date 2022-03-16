@@ -111,3 +111,56 @@ footer {
   padding-top:10px;
   background-color:#051334;
 }
+section.food {
+	float: left;
+	width: 75%;
+  border-right: 1px solid #eeeeee;}
+img {
+  width: 250px;
+}
+article {
+	clear: both;
+	overflow: auto;
+	width: 100%;}
+hgroup {
+	margin-top: 40px;}
+figure {
+	float: left;
+	width: 250px;
+	padding: 5px;
+	margin: 20px;
+	border: 1px solid #eeeeee;}
+figcaption {
+	font-size: 90%;
+	text-align: left;}
+aside {
+	width: 20%;
+	float: left;
+	padding: 0px 0px 0px 20px;}
+aside section a {
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid #eeeeee;}
+aside section a:hover {
+	color: #95c5e0;
+	background-color: #efefef;}
+a {
+	color: #7bb3e7;
+	text-decoration: none;}
+h1, h2, h3 {
+	font-weight: normal;}
+h2 {
+	margin: 10px 0px 5px 0px;
+	padding: 0px;}
+h3 {
+	margin: 0px 0px 10px 0px;
+	color: #7bb3e7;}
+aside h2 {
+	padding: 30px 0px 10px 0px;
+  color: #000000;}
+li {
+  list-style: none;
+}
+#more {
+	display: none;
+}
