@@ -162,6 +162,21 @@ aside h2 {
 li {
   list-style: none;
 }
-#more, #more2,#more3,#more4,#more5,#more1 {
+#more {
+	display: none;
+}
+#more1 {
+	display: none;
+}
+#more2 {
+	display: none;
+}
+#more3 {
+	display: none;
+}
+#more4 {
+	display: none;
+}
+#more5 {
 	display: none;
 }
