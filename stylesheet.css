@@ -111,6 +111,7 @@ footer {
   padding-top:10px;
   background-color:#051334;
 }
+
 section.food {
 	float: left;
 	width: 75%;
@@ -144,7 +145,7 @@ aside section a {
 aside section a:hover {
 	color: #95c5e0;
 	background-color: #efefef;}
-a {
+.food-wrapper a {
 	color: #7bb3e7;
 	text-decoration: none;}
 h1, h2, h3 {
@@ -161,6 +162,6 @@ aside h2 {
 li {
   list-style: none;
 }
-#more {
+#more, #more2,#more3,#more4,#more5,#more1 {
 	display: none;
 }
